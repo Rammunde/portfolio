@@ -34,9 +34,16 @@ nav,
 }
 
 nav {
+  /* justify-content: space-around;
+  align-items: center;
+  height: 17vh; */
+
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  background-color: #333; /* This is the color you want to change */
+  color: white;
+  padding: 1rem 2rem;
 }
 
 .nav-links {
@@ -46,7 +53,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -381,6 +388,55 @@ article .icon {
 }
 
 /* CONTACT */
+/* CONTACT FORM */
+
+/* .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+} */
+
+
 
 #contact {
   display: flex;
@@ -418,15 +474,83 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
-}
+} 
 
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  background-color: #333; /* Change to your preferred color */
+  color: white;
+  padding: 2rem;
+  position: revert-layer;
+  bottom: 0;
+  width: 100%;
+  /* text-align: center; */
 }
 
-footer p {
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-section h2 {
+  margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section .socials a {
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.footer-section .socials a i {
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
   text-align: center;
+}
+
+.footer-section .newsletter form {
+  display: flex;
+}
+
+.footer-section .newsletter input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.footer-section .newsletter button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
 }
